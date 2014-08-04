@@ -15,7 +15,7 @@
 //= require moment
 //= require pikaday
 //= require selectize
-//= require Chart
+//= require Chartbeta
 //= require select2
 //= require projects
 //= require_tree .
