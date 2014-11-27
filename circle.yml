@@ -1,0 +1,14 @@
+machine:
+  ruby:
+    version: 2.1.5
+  services:
+    - postgresql
+
+database:
+  override:
+    - cp config/database.travis.yml config/database.yml
+    - bundle exec rake db:create db:schema:load --trace
+
+dependencies:
+  pre:
+    - cp .sample.env .env
